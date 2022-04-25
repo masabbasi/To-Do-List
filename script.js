@@ -8,16 +8,6 @@ let toDoArray = []
 
 function removeItem (event){
     event.target.parentElement.remove()
-
-    // let localStorageTodos = JSON.parse(localStorage.getItem('toDo'));
-    // let removeItem =event.target.parentElement.textContent;
-    // toDoArray = localStorageTodos.filter(function (item) {
-    //   item.title != removeItem;
-    // })
-    // console.log(toDoArray);
-    // setLocalStorage(toDoArray);
-
-
     let localStorageToDo = JSON.parse(localStorage.getItem('toDo'))
     toDoArray = localStorageToDo;
     let removeItem =event.target.parentElement.textContent;
